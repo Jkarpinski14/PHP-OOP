@@ -9,7 +9,17 @@
 	print $track1->name;
 
 	class Speedway{
-		public $name = "Daytona";
+		public $thename = "Daytona";
 		public $location = "Florida";
 		public $banking = "high";
+
+		function getName(){
+			return "{$this->thename}" . "{$this->location}";
+		}
 	}
+
+	$speedway1 = new Speedway();
+	$speedway1->thename = "Lowe's";
+	$speedway1->location = "Charlotte";
+
+	print "The track is {speedway1->getName()}.";
