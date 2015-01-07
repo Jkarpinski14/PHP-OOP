@@ -8,3 +8,8 @@
 	$track1 = new Track();
 	print $track1->name;
 
+	class Speedway{
+		public $name = "Daytona";
+		public $location = "Florida";
+		public $banking = "high";
+	}
