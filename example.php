@@ -22,4 +22,6 @@
 	$speedway1->thename = "Lowe's";
 	$speedway1->location = "Charlotte";
 
-	print "The track is {speedway1->getName()}.";
+	print "The track is" . $speedway1->getName() ;
+?>
+<!--end of work for 01/06/15-->
