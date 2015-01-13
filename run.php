@@ -35,3 +35,24 @@
 	var_dump(is_array("bass drop"));
 	var_dump(is_array("Pizza"));
 ?>
+
+<!--Work for 01/12/14 begins here-->
+<?php
+	class Track{
+		public $title;
+		public $location;
+		public $length;
+
+		function __construct($title, $location, $length) {
+			$this->title = $title;
+			$this->location = $location;
+			$this->length = $length;
+		}
+
+		function getName(){
+			return "$this->title" . "$this->location" . "$this->length";
+		}
+	}
+
+	$track1 = new Track("MIS", "Michigan", "two");
+	print $track1->getName();
