@@ -40,19 +40,19 @@
 <?php
 	class Track{
 		public $title;
-		public $location;
+		public $state;
 		public $length;
 
-		function __construct($title, $location, $length) {
+		function __construct($title, $state, $length) {
 			$this->title = $title;
-			$this->location = $location;
+			$this->state = $state;
 			$this->length = $length;
 		}
 
 		function getName(){
-			return "$this->title" . "$this->location" . "$this->length";
+			return $this->title . $this->state . $this->length;
 		}
 	}
 
 	$track1 = new Track("MIS", "Michigan", "two");
-	print $track1->getName();
+	print "Track 1: " . $track1->getName();
