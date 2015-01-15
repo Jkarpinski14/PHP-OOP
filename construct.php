@@ -19,7 +19,7 @@ class Dance {
 	}
 
 	function getName() {
-		return “Divisions of house are “ . $this->progressive . “ and” . $this->hard . “ and “ . $this->tool . “ .”;
+		return "Divisions of house are " . $this->progressive . "and"  . $this->hard . "and"  . $this->tool . “ .”;
 	}
 }
 
@@ -43,5 +43,5 @@ class Rave extends Dance {
 	}
 }
 
-$house = new House(“Tiesto”, “Rob Miles”, “w&w”, “Armin van Buuren”);
-print “Genre 1 is a ” . $house->getName();
+$house = new House("Tiesto", "Rob Miles", "w&w", "Armin van Buuren");
+print "Genre 1 is a " . $house->getName();

@@ -13,7 +13,7 @@
 		}
 
 		function getName(){
-			return "A car includes: " . $this->make . "and " . $this->manu;
+			return " " . $this->make . " " . $this->manu;
 		}
 	}
 
@@ -28,7 +28,7 @@
 		}
 	}
 
-	$truck = new Sedan("Chevy", "Impala", "small", "meh");
+	$sedan = new Sedan("Chevy", "Impala", "small", "meh");
 	print "Car 1 is a " . $sedan->getName();
 
 
@@ -39,7 +39,7 @@
 		public $bigroom;
 		public $dubstep;
 
-		function __construct($progressive, $trance, $house, $dubstep){
+		function __construct($progressive, $trance, $bigroom, $dubstep){
 			$this->progressive = $progressive;
 			$this->trance = $trance;
 			$this->bigroom = $bigroom;
@@ -47,7 +47,7 @@
 		}
 
 		function getName(){
-			return "Dance includes: " . $this->make . "and " . $this->manu;
+			return " " . $this->progressive . " and " . $this->bigroom;
 		}
 	}
 
@@ -63,4 +63,4 @@
 	}
 
 	$house = new House("Tritonal", "Armin Van Buuren", "DVBBS", "Skrillex");
-	print "Dance artists are " . $house->getName();	
+	print " House artists include " . $house->getName();	

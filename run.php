@@ -39,20 +39,21 @@
 <!--Work for 01/12/14 begins here-->
 <?php
 	class Track{
-		public $title;
+		public $name;
 		public $state;
 		public $length;
 
-		function __construct($title, $state, $length) {
-			$this->title = $title;
+		function __construct($name, $state, $length) {
+			$this->name = $name;
 			$this->state = $state;
 			$this->length = $length;
 		}
 
 		function getName(){
-			return $this->title . $this->state . $this->length;
+			return $this->name . " in " . $this->state . " and is " . $this->length . " miles long.";
 		}
 	}
 
 	$track1 = new Track("MIS", "Michigan", "two");
 	print "Track 1: " . $track1->getName();
+?>	
