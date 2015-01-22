@@ -24,13 +24,13 @@ class Dance {
 }
 
 class House extends Dance {
-	function __construct($progressive, $dream, $hard, $trance, $tool){
-		parent::__construct($progressive, $dream, $hard, $trance);
-		$this->tool = $tool;
-	}
-	function greet() {
-		return $this->tool;
-	}	
+		function __construct($progressive, $dream, $hard, $trance, $tool){
+			parent::__construct($progressive, $dream, $hard, $trance);
+			$this->tool = $tool;
+		}
+		function greet() {
+			return $this->tool;
+		}	
 }
 
 class Rave extends Dance {

@@ -43,11 +43,9 @@
 		public $state;
 		public $length;
 
-		function __construct($name, $state, $length) {
-			$this->name = $name;
-			$this->state = $state;
-			$this->length = $length;
-		}
+	function __construct($name, ){
+
+	}	
 
 		function getName(){
 			return $this->name . " in " . $this->state . " and is " . $this->length . " miles long.";
